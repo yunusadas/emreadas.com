@@ -536,7 +536,7 @@ $langFile = 'lang/' . $langCode . '.php';
                             <h4>Bevermac Machines Inc.</h4>
                             <p>Website</p>
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/bevermac.png" data-gallery="portfolioGallery"
+                                <a href="assets/img/portfolio/bevermac_new.png" data-gallery="portfolioGallery"
                                    class="portfolio-lightbox" title="Bevermac"><i class="bx bx-plus"></i></a>
                                 <a href="bevermac.php" class="portfolio-details-lightbox"
                                    data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>

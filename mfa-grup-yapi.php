@@ -84,11 +84,6 @@ $datas_en = [
                             <div class="swiper-slide">
                                 <img src="assets/img/portfolio/mfa_3.png" alt="">
                             </div>
-
-                            <div class="swiper-slide">
-                                <img src="assets/img/portfolio/portfolio-details-3.jpg" alt="">
-                            </div>
-
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
