@@ -1,3 +1,7 @@
+<?php
+$lang = "TR";
+$lang_way="tr";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +26,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
 
 </head>
 
@@ -42,6 +45,8 @@
             <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolyo</span></a>
             </li>
             <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>İletişim</span></a>
+            </li>
+            <li><a href="#" class="nav-link scrollto"><i class='bx bx-world'></i> <span><?php echo $lang;?></span></a>
             </li>
         </ul>
     </nav><!-- .nav-menu -->
@@ -448,7 +453,7 @@
                             <div class="portfolio-links">
                                 <a href="assets/img/portfolio/mfa.png" data-gallery="portfolioGallery"
                                    class="portfolio-lightbox" title="MFA Grup Yapı"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="portfolio-details-lightbox"
+                                <a href="mfa-grup-yapi.php" class="portfolio-details-lightbox"
                                    data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
@@ -464,7 +469,7 @@
                             <div class="portfolio-links">
                                 <a href="assets/img/portfolio/simar.png" data-gallery="portfolioGallery"
                                    class="portfolio-lightbox" title="Simar Colours"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="portfolio-details-lightbox"
+                                <a href="simar.php" class="portfolio-details-lightbox"
                                    data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
@@ -480,7 +485,7 @@
                             <div class="portfolio-links">
                                 <a href="assets/img/portfolio/baygun.png" data-gallery="portfolioGallery"
                                    class="portfolio-lightbox" title="Baygun Hırdavat"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="portfolio-details-lightbox"
+                                <a href="baygun.php" class="portfolio-details-lightbox"
                                    data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
@@ -496,7 +501,7 @@
                             <div class="portfolio-links">
                                 <a href="assets/img/portfolio/binebze.png" data-gallery="portfolioGallery"
                                    class="portfolio-lightbox" title="Binebze ET"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="portfolio-details-lightbox"
+                                <a href="binebze.php" class="portfolio-details-lightbox"
                                    data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
@@ -512,7 +517,7 @@
                             <div class="portfolio-links">
                                 <a href="assets/img/portfolio/lux_car.png" data-gallery="portfolioGallery"
                                    class="portfolio-lightbox" title="Istanbul Lux Car"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="portfolio-details-lightbox"
+                                <a href="istanbul-lux-car.php" class="portfolio-details-lightbox"
                                    data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
@@ -526,9 +531,9 @@
                             <h4>Bevermac Machines Inc.</h4>
                             <p>Website</p>
                             <div class="portfolio-links">
-                                <a href="assets/img/portfolio/_new.png" data-gallery="portfolioGallery"
+                                <a href="assets/img/portfolio/bevermac.png" data-gallery="portfolioGallery"
                                    class="portfolio-lightbox" title="Bevermac"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="portfolio-details-lightbox"
+                                <a href="bevermac.php" class="portfolio-details-lightbox"
                                    data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
@@ -544,7 +549,7 @@
                             <div class="portfolio-links">
                                 <a href="assets/img/portfolio/sanat_makina.png" data-gallery="portfolioGallery"
                                    class="portfolio-lightbox" title="Sanat Makina"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="portfolio-details-lightbox"
+                                <a href="sanat-makina.php" class="portfolio-details-lightbox"
                                    data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
