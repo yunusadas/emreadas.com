@@ -1,6 +1,11 @@
 <?php
 $lang = "TR";
-$lang_way="tr";
+$url = $_SERVER['REQUEST_URI'];
+$supportedLangs = array('tr', 'en');
+$urlParts = explode('/', $url);
+$langCode = $urlParts[2] ?? $supportedLangs[0]; //
+$langFile = 'lang/' . $langCode . '.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,7 +51,7 @@ $lang_way="tr";
             </li>
             <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>İletişim</span></a>
             </li>
-            <li><a href="#" class="nav-link scrollto"><i class='bx bx-world'></i> <span><?php echo $lang;?></span></a>
+            <li><a href="/<?php echo $supportedLangs[0];?>" class="nav-link scrollto"><i class='bx bx-world'></i> <span><?php echo $lang;?></span></a>
             </li>
         </ul>
     </nav><!-- .nav-menu -->
