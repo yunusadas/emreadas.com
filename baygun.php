@@ -1,3 +1,39 @@
+<?php
+$datas_tr = [
+    "baslik" => "Proje Bilgileri",
+    "musteri_dil" => "Firma",
+    "kategori" => "Web Tasarım",
+    "kategori_dil" => "Kategori",
+    "musteri" => "Baygun Hırdavat",
+    "tarih_dil"=>"Proje Tarihi",
+    "tarih" => "19 Mart, 2024",
+    "url" => "www.baygunhirdavat.com",
+    "url_dil"=>"Proje Linki",
+    "aciklama" => "Proje kapsamında websitesi tasarımı geliştirilmiştir. 
+    Arka-yüz geliştirmeleri ile birlikte seo çalışmaları yapılmıştır. 
+    İçerik bazlı çalışmalar ile site yapısı oluşturulmuştur. 
+    Kurumsal kimlik yeniden şekillendirme işlemleri adına düzenli
+    çalışmalar devam etmiştir.",
+    "alt_baslik" => "Projede Yapılanlar: ",
+];
+$datas_en = [
+    "baslik" => "Project information",
+    "musteri_dil" => "Client",
+    "kategori" => "Web design",
+    "kategori_dil" => "Category",
+    "musteri" => "Baygun Hırdavat",
+    "tarih_dil"=>"Project Date",
+    "tarih" => "19 March 2024",
+    "url_dil"=>"Project Link",
+    "url" => "www.baygunhirdavat.com",
+    "aciklama" => "Website design was developed within the scope of the project.
+     SEO studies were carried out along with back-end developments.
+     The site structure was created with content-based studies.
+     Regular corporate identity reshaping processes
+     studies continued.",
+    "alt_baslik" => "What's done in the project: ",
+];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,18 +97,20 @@
 
                 <div class="col-lg-4">
                     <div class="portfolio-info">
-                        <h3>Project information</h3>
+                        <h3><?php echo $datas_tr["baslik"] ?></h3>
                         <ul>
-                            <li><strong>Category</strong>: Web design</li>
-                            <li><strong>Client</strong>: ASU Company</li>
-                            <li><strong>Project date</strong>: 01 March, 2020</li>
-                            <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                            <li><strong><?php echo $datas_tr["kategori_dil"] ?>:</strong> <?php echo $datas_tr["kategori"] ?></li>
+                            <li><strong><?php echo $datas_tr["musteri_dil"] ?>:</strong> <?php echo $datas_tr["musteri"] ?></li>
+                            <li><strong><?php echo $datas_tr["tarih_dil"] ?>:</strong> <?php echo $datas_tr["tarih"] ?></li>
+                            <li><strong><?php echo $datas_tr["url_dil"] ?>:</strong> <a target="_blank"
+                                                                                        href="https://<?php echo $datas_tr["url"] ?>"><?php echo $datas_tr["url"] ?></a>
+                            </li>
                         </ul>
                     </div>
                     <div class="portfolio-description">
-                        <h2>This is an example of portfolio detail</h2>
+                        <h2><?php echo $datas_tr["alt_baslik"] ?></h2>
                         <p>
-                            Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                            <?php echo $datas_tr["aciklama"] ?>
                         </p>
                     </div>
                 </div>

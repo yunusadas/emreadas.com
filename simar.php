@@ -9,12 +9,11 @@ $datas_tr = [
     "tarih" => "01 Mayıs, 2023",
     "url" => "www.simarcolours.com",
     "url_dil"=>"Proje Linki",
-    "aciklama" => "Bu bir portfolyo detayı örneğidir. 
-    Autem ipsum nam porro corporis rerum. Quis eos dolorem eos 
-    itaque inventore commodi labore quia quia. Exercitationem repudiandae 
-    officiis neque suscipit non officia eaque itaque enim. Voluptatem 
-    officia accusantium nesciunt est omnis tempora consectetur dignissimos.
-    Sequi nulla at esse enim cum deserunt eius.",
+    "aciklama" => "Proje kapsamında website geliştirilmesi 
+    ve seo çalışması yapılmıştır. Firmanın kurumsal kimliğine 
+    uygun bir tasarım oluşturulmuştur. Dijital pazarlama 
+    çalışmaları yapılmıştır. Seo merkezli içerik oluşturma 
+    ve arka yüz tasarımları yapılmıştır.",
     "alt_baslik" => "Projede Yapılanlar: ",
 ];
 $datas_en = [
@@ -27,12 +26,10 @@ $datas_en = [
     "tarih" => "01 May, 2023",
     "url_dil"=>"Project Link",
     "url" => "www.simarcolours.com",
-    "aciklama" => "This is an example of portfolio detail. 
-    Autem ipsum nam porro corporis rerum. Quis eos dolorem eos 
-    itaque inventore commodi labore quia quia. Exercitationem repudiandae 
-    officiis neque suscipit non officia eaque itaque enim. Voluptatem 
-    officia accusantium nesciunt est omnis tempora consectetur dignissimos.
-    Sequi nulla at esse enim cum deserunt eius.",
+    "aciklama" => "Project scope includes website development and seo work. 
+    A design suitable for the corporate identity of the company has been created.
+     Digital marketing studies have been carried out. Seo-focused content creation 
+     and back-end designs have been made.",
     "alt_baslik" => "What's done in the project: ",
 ];
 ?>
