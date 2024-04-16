@@ -1,11 +1,12 @@
 <?php
-$lang = "TR";
+session_start();
+if (isset($_GET['lang'])) {
+    $_SESSION['language'] = $_GET['lang'];
+} else {
+    $_SESSION['language'] = 'tr';
+}
+$language = $_SESSION['language'];
 $url = $_SERVER['REQUEST_URI'];
-$supportedLangs = array('tr', 'en');
-$urlParts = explode('/', $url);
-$langCode = $urlParts[2] ?? $supportedLangs[0]; //
-$langFile = 'lang/' . $langCode . '.php';
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -51,7 +52,11 @@ $langFile = 'lang/' . $langCode . '.php';
             </li>
             <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>İletişim</span></a>
             </li>
-            <li><a href="/<?php echo $supportedLangs[0];?>" class="nav-link scrollto"><i class='bx bx-world'></i> <span><?php echo $lang;?></span></a>
+            <li><a href="/tr/index.php" class="nav-link scrollto"><i class='bx bx-world'></i>
+                    <span>TR</span></a>
+            </li>
+            <li><a href="/en/index.php" class="nav-link scrollto"><i class='bx bx-world'></i>
+                    <span>EN</span></a>
             </li>
         </ul>
     </nav><!-- .nav-menu -->
@@ -65,12 +70,13 @@ $langFile = 'lang/' . $langCode . '.php';
         <p>I'm a <span class="typed" data-typed-items="Web Developer, Freelancer, Tester, Solution Partner"></span></p>
         <div class="social-links">
             <a href="https://twitter.com/Emreadasovski" target="_blank" class="twitter"><i
-                    class="bx bxl-twitter"></i></a>
-            <a href="https://medium.com/@yunusemreadas" target="_blank" class="linkedin"><i class="bx bxl-medium"></i></a>
+                        class="bx bxl-twitter"></i></a>
+            <a href="https://medium.com/@yunusemreadas" target="_blank" class="linkedin"><i
+                        class="bx bxl-medium"></i></a>
             <a target="_blank" href="https://www.instagram.com/emreyadas/" class="instagram"><i
-                    class="bx bxl-instagram"></i></a>
+                        class="bx bxl-instagram"></i></a>
             <a target="_blank" href="https://www.linkedin.com/in/yunus-emre-ada%C5%9F-212200174/" class="linkedin"><i
-                    class="bx bxl-linkedin"></i></a>
+                        class="bx bxl-linkedin"></i></a>
         </div>
     </div>
 </section><!-- End Hero -->
@@ -269,7 +275,7 @@ $langFile = 'lang/' . $langCode . '.php';
                     <div class="resume-item pb-0">
                         <h4>Yunus Emre Adas</h4>
                         <p><em>I am a software developer with robust problem-solving skills and proven experience in
-                            creating and designing software in a test-driven environment.</em></p>
+                                creating and designing software in a test-driven environment.</em></p>
                         <ul>
                             <li>Living Lab, Basaksehir, Ist.</li>
                             <li><a href="tel:+905442607775">(544) 260-7775</a></li>
@@ -418,7 +424,9 @@ $langFile = 'lang/' . $langCode . '.php';
 
                 </div>
                 <div class="text-center">
-                    <a target="_blank" href="assets/CV_Emre-Adas_2024.pdf" download=""><button class="cv_button" type="submit"> CV İndir</button></a>
+                    <a target="_blank" href="assets/CV_Emre-Adas_2024.pdf" download="">
+                        <button class="cv_button" type="submit"> CV İndir</button>
+                    </a>
                 </div>
             </div>
 
@@ -666,10 +674,14 @@ $langFile = 'lang/' . $langCode . '.php';
         <h3>Yunus Emre Adaş</h3>
         <p>Yanı başınızdaki yazılımcınız.</p>
         <div class="social-links">
-            <a target="_blank" href="https://twitter.com/Emreadasovski" class="twitter"><i class="bx bxl-twitter"></i></a>
-            <a target="_blank" href="https://www.instagram.com/emreyadas/" class="instagram"><i class="bx bxl-instagram"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/yunus-emre-ada%C5%9F-212200174/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            <a target="_blank" href="https://medium.com/@yunusemreadas" class="linkedin"><i class="bx bxl-medium"></i></a>
+            <a target="_blank" href="https://twitter.com/Emreadasovski" class="twitter"><i
+                        class="bx bxl-twitter"></i></a>
+            <a target="_blank" href="https://www.instagram.com/emreyadas/" class="instagram"><i
+                        class="bx bxl-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/yunus-emre-ada%C5%9F-212200174/" class="linkedin"><i
+                        class="bx bxl-linkedin"></i></a>
+            <a target="_blank" href="https://medium.com/@yunusemreadas" class="linkedin"><i
+                        class="bx bxl-medium"></i></a>
         </div>
         <div class="copyright">
             &copy; Copyright <strong><span>Emre Adaş</span></strong>. Tüm hakkı saklıdır.
@@ -682,7 +694,7 @@ $langFile = 'lang/' . $langCode . '.php';
 
 <div id="preloader"></div>
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
+            class="bi bi-arrow-up-short"></i></a>
 
 <!-- Vendor JS Files -->
 <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
